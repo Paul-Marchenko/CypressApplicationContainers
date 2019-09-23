@@ -1,0 +1,15 @@
+{
+  "name": "cucumber_test",
+  "version": "1.0.0",
+  "description": "Test task",
+  "scripts": {
+    "test": "cypress open",
+    "test1": "./node_modules/.bin/cucumber-js ./integration/features --require ./integration"
+  },
+  "author": "Pavlo Marchenko",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "cypress": "^3.4.1"
+  }
+}
