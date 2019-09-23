@@ -8,9 +8,5 @@ class ApplicationContainers{
     get columnHeader(){
         return this.appColumn.contains();
     }
-    
-
-    
-
 }
 export default new ApplicationContainers();

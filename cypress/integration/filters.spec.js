@@ -48,6 +48,6 @@ describe('Filters', () => {
       Filters.filteringByName('emma');
       Filters.filteringByCity('liverpool');
       MemberContainer.memberName.should('not.contain','emma stewart');
-      MemberContainer.memberName.should('not.contain', 'linda ruiz')
+      MemberContainer.memberName.should('not.contain', 'linda ruiz');
    });
 });

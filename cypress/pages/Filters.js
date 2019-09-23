@@ -29,4 +29,3 @@ class Filters{
 
 }
 export default new Filters();
-//this.submitButton.contains(buttonName).click()
