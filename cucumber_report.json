@@ -1,0 +1,244 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Filter panel is filtered data.",
+    "line": 1,
+    "id": "filter-panel-is-filtered-data.",
+    "tags": [],
+    "uri": "cypress/integration/features/filter.feature",
+    "elements": [
+      {
+        "id": "filter-panel-is-filtered-data.;filters-has-name-field",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Filters has Name field",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User visits the Application",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Application is opnened",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "has Name field",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "filter-panel-is-filtered-data.;filters-has-city-field",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Filters has City field",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User visits the Application",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "Application is opnened",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "has City field",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "filter-panel-is-filtered-data.;filters-is-filtered-by-name-field-for-correct-user-name",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Filters is filtered by Name field for correct user name",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "User visits the Application",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "Application is opnened",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User name is typed to the Name field",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "Submit button is clicked",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Only has typed User name is displayed",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      },
+      {
+        "id": "filter-panel-is-filtered-data.;filters-is-filtered-by-city-field-for-correct-user-name",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Filters is filtered by City field for correct user name",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "User visits the Application",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "Application is opnened",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "City name is typed to the City field",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "Submit button is clicked",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "Only user with has typed City name is displayed",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "     Label should be dispalyed in the Header of the application",
+    "keyword": "Feature",
+    "name": "Applications Logo is displayed",
+    "line": 2,
+    "id": "applications-logo-is-displayed",
+    "tags": [],
+    "uri": "cypress/integration/features/header.feature",
+    "elements": [
+      {
+        "id": "applications-logo-is-displayed;applications-logo-is-in-the-header",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Applications Logo is in the Header",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User visits the Application",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Application is opnened",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Logo is displayed in the Header",
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

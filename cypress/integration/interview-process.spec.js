@@ -5,19 +5,21 @@ describe('Application container', () => {
         cy.visit('http://localhost:3000/');
     });
   
-    it.only('Is moved from Applied to Interviewing colomn', () => {
-        MemberContainer.moveContainer('emma stewart');
-        // MemberContainer.getMemberInTheColumn('emma stewart', 'Interviewing').should('have.text', "Interviewing");
+    it('Is moved from Applied to Interviewing colomn', () => {
+        MemberContainer.moveContainerRight('emma stewart');
+        MemberContainer.getMemberInTheColumn('emma stewart', 'Interviewing').should('have.text', "emma stewart");
     });
 
     it('Is moved from Interviewing to Applied colomn', () => {
-        MemberContainer.moveContainer('emma stewart');
-        // MemberContainer.getMemberInTheColumn('emma stewart', 'Applied').should('have.text', "Applied");
+        MemberContainer.moveContainerRight('emma stewart');
+        MemberContainer.moveContainerLeft('emma stewart');
+        MemberContainer.getMemberInTheColumn('emma stewart', 'Applied').should('have.text', "emma stewart");
     });
 
     it('Is moved from Interviewing to Hired colomn', () => {
-        MemberContainer.moveContainer('emma stewart');
-        // MemberContainer.getMemberInTheColumn('emma stewart', 'Hired').should('have.text', "Hired");
+        MemberContainer.moveContainerRight('emma stewart');
+        MemberContainer.moveContainerRight('emma stewart');
+        MemberContainer.getMemberInTheColumn('emma stewart', 'Hired').should('have.text', "emma stewart");
     });
 
 })

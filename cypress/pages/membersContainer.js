@@ -14,17 +14,16 @@ class MemberContainer{
     get moveButton(){
         return this.memberContainer.find('.CrewMember-toolbar .CrewMember-up').contains(">");
     }
-    moveContainer(name){
-        this.memberContainer.contains(name).find('.CrewMember-toolbar .CrewMember-up').contains(">").click();
-         
+    moveContainerRight(name){
+        this.memberContainer.contains(name).parent().parent().parent().find('.CrewMember-toolbar .CrewMember-up').contains(">").click();
     };
      
-    selectColumn(columnName){
-        ApplicationContainers.appColumn.children().contains(columnName);
+    moveContainerLeft(name){
+        this.memberContainer.contains(name).parent().parent().parent().find('.CrewMember-toolbar [type="button"]').contains("<").click();
     };
 
     getMemberInTheColumn(memberName, columnName){
-        return ApplicationContainers.appColumn.contains(columnName).find('.CrewMemeber-name').contains(memberName);
+        return ApplicationContainers.appColumn.contains(columnName).parent().find('.CrewMemeber-name').contains(memberName);
     };
 }
 export default new MemberContainer();
