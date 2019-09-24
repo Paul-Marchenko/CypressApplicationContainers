@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "description": "Test task",
   "scripts": {
-    "test": "cypress open",
-    "test1": "./node_modules/.bin/cucumber-js ./integration/features --require ./integration"
+    "test_cypress": "cypress open",
+    "test": "cucumber-js ./cypress/integration/features --require-module @babel/register --require-module @babel/polyfill -f json:cucumber_report.json -f progress"
   },
   "author": "Pavlo Marchenko",
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.6.2",
+    "babel-install": "2.1.0",
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",
     "cypress": "^3.4.1"
+  },
+  "dependencies": {
+    "babel": "^6.23.0"
   }
 }
