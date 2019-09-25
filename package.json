@@ -2,12 +2,28 @@
   "name": "cucumber_test",
   "version": "1.0.0",
   "description": "Test task",
+  "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test_dev": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "test_cypress": "cypress open",
-    "test": "cucumber-js ./cypress/integration/features --require-module @babel/register --require-module @babel/polyfill -f json:cucumber_report.json -f progress"
+    "test": "cypress run",
+    "cucumber": "cucumber-js ./cypress/integration/features --require-module @babel/register --require-module @babel/polyfill -f json:cucumber_report.json -f progress",
   },
   "author": "Pavlo Marchenko",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "commonPath": "cypress/support/step_definitions"
+  },
   "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
     "@babel/core": "^7.6.2",
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.3.1",
@@ -19,6 +35,15 @@
     "cypress-cucumber-preprocessor": "^1.16.0"
   },
   "dependencies": {
-    "babel": "^6.23.0"
+    "babel": "^6.23.0",
+    "informed": "^1.10.5",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-localstorage": "^0.4.1",
+    "styled-components": "^3.4.6"
   }
 }

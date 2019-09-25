@@ -1,7 +1,7 @@
 import Header from '../../pages/Header';
 import Base from '../../pages/Base';
 
-import { Given, Then, And } from "cypress-cucumber-preprocessor/steps";
+import { Given, Then, When } from "cypress-cucumber-preprocessor/steps";
 
 
 Given('User visits the Application', () => {

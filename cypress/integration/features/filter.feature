@@ -1,7 +1,6 @@
 Feature: Filter panel is filtered data.
-     
 
-    Scenario: Filters has Name field
+   Scenario: Filters has Name field
         Given User visits the Application
         When Application is opnened
         Then has Name field
