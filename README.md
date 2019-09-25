@@ -19,7 +19,7 @@
 
 `yarn add cypress --dev`
 
-`yarn add --dev cucumber`
+`yarn add --dev cypress-cucumber-preprocessor`
 
 `yarn test`
 
