@@ -16,7 +16,7 @@
   "license": "ISC",
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "commonPath": "cypress/support/step_definitions"
+    "commonPath": "cypress/support/steps"
   },
   "devDependencies": {
     "eslint": "^5.6.0",
